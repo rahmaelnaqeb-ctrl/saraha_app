@@ -8,7 +8,7 @@ export const DB_Connection = async () => {
     }
 
     try {
-        await mongoose.connect("mongodb://rahma:rahma123@ac-us24djg-shard-00-00.jqztkkx.mongodb.net:27017,ac-us24djg-shard-00-01.jqztkkx.mongodb.net:27017,ac-us24djg-shard-00-02.jqztkkx.mongodb.net:27017/sarahaApp_DB?ssl=true&replicaSet=atlas-mt1l2l-shard-0&authSource=admin&appName=Cluster0");
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("Database Connected Successfully!");
     } catch (err) {
         console.log("Failed To Connect:", err.message);
