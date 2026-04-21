@@ -1,4 +1,4 @@
-# Saraha App (Backend) 🚀
+# Saraha App (Backend) 
 
 A private messaging application (Saraha-style) built with **Node.js**, **Express**, and **MongoDB**. This project focuses on backend architecture, security best practices, and RESTful API development.
 
